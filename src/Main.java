@@ -5,7 +5,7 @@ import java.util.Queue;
 public class Main {
     public static void main(String[] args) {
 
-        Queue queuePassengers = new LinkedList(generateClients());
+        Queue <Person> queuePassengers = new LinkedList(generateClients());
 
         while (!queuePassengers.isEmpty()) {
 
@@ -25,7 +25,7 @@ public class Main {
 
         Person person1 = new Person("Ivan", "Ivanov", 1);
         Person person2 = new Person("Petr", "Romanov", 4);
-        Person person3 = new Person("Katya", "Velikaya", 1);
+        Person person3 = new Person("Katya", "Velikaya", 3);
         Person person4 = new Person("Vladimir", "Lenin", 1);
         Person person5 = new Person("Margaret", "Tatcher", 2);
 

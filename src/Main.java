@@ -5,11 +5,11 @@ import java.util.Queue;
 public class Main {
     public static void main(String[] args) {
 
-        Queue <Person> queuePassengers = new LinkedList(generateClients());
+        Queue <Person> queuePassengers = new <Person> LinkedList(generateClients());
 
         while (!queuePassengers.isEmpty()) {
 
-            Person nextPassenger = (Person) queuePassengers.poll();
+            Person nextPassenger = queuePassengers.poll();
             System.out.println(nextPassenger + " прокатился на аттракционе");
 
             int ticketCount = nextPassenger.getTicketCount();
